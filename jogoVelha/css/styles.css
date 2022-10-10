@@ -1,35 +1,81 @@
+:root {
+    --bg-primary: black;
+    --bg-secondary: white;
+    /*color decoration*/
+    --shadow-decoration: #0aace2;
+    /*text color*/
+    --text-primary: white;
+}
+
 body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: var(--bg-primary);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h1 {
+    font-size: 3em;
+    color: #bc2e1e;
+    background: var(--bg-primary);
+    text-shadow: 0 1px 0px white, 1px 0 0px white, 1px 2px 1px white, 2px 1px 1px white, 2px 3px 2px white, 3px 2px 2px white, 3px 4px 2px white, 4px 3px 3px white, 4px 5px 3px white, 5px 4px 2px white, 5px 6px 2px white, 6px 5px 2px white, 6px 7px 1px white, 7px 6px 1px white, 7px 8px 0px white, 8px 7px 0px white;
+}
+
+p {
+    color: var(--text-primary);
+}
+
+input {
+    width: 30px;
+    height: 30px;
 }
 
 .gui {
-    margin-top: 10px;
-    font-size: 20px;
-    text-align: center;
+    margin-top: -50px;
+    margin-bottom: 50px;
+    font-size: 2em;
+    text-align: end;
+    color: var(--text-primary);
+
 }
 
 .gui__turn {
     text-transform: uppercase;
+    color: var(--text-primary);
+    border: 3px solid white;
+    padding: 5px 10px;
+
 }
+
 
 .board__column {
     display: flex;
-    margin-bottom: 1px;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    width: 40vw;
 }
 
 .board__cell {
     position: relative;
     background-color: blue;
     color: white;
-    height: 90px;
-    width: 90px;
+    height: 100px;
+    width: 150px;
     margin: 2px;
-    font-size: 3em;
-    line-height: 70px;
+    font-size: 5em;
     text-align: center;
     border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 19px 0px 3px -1px rgba(0, 0, 0, 0);
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, 19px 0px 3px -1px rgba(0, 0, 0, 0);
+
+    color: #FFFFFF;
+    background: #232323;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 }
 
 .btn {
@@ -42,4 +88,36 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
+}
+
+/*RESPONSIVE MOBILE*/
+@media (max-width: 425px) {
+    
+.board__column {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    width: 100vw;
+}
+
+
+.board__cell {
+    height: 70px;
+    width: 110px;
+    margin: 2px;
+    font-size: 3em;
+}
+
+
+.gui {
+    font-size: 1em;
+    padding: 10px;
+
+}
+p, h1 {
+    padding: 0px 10px;
+}
+.btn {
+    margin-left: 10px;
+}
 }
