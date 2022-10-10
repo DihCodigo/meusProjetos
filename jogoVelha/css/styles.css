@@ -36,7 +36,7 @@ input {
 .gui {
     margin-top: -50px;
     margin-bottom: 50px;
-    font-size: 2em;
+    font-size: 1.3em;
     text-align: end;
     color: var(--text-primary);
 
@@ -79,11 +79,11 @@ input {
 }
 
 .btn {
-    background-color: blue;
+    background-color: red;
     color: white;
     font-size: 1.1em;
     font-weight: 500;
-    padding: 8px 20px;
+    padding: 10px 40px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -110,7 +110,7 @@ input {
 
 
 .gui {
-    font-size: 1em;
+    font-size: 0.6em;
     padding: 10px;
 
 }
