@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gui {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.gui__turn {
+    text-transform: uppercase;
+}
+
+.board__column {
+    display: flex;
+    margin-bottom: 1px;
+}
+
+.board__cell {
+    position: relative;
+    background-color: blue;
+    color: white;
+    height: 90px;
+    width: 90px;
+    margin: 2px;
+    font-size: 3em;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
