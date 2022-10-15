@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background: url("../image/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 48px;
+}
+header .logo {
+    width: 100px;
+
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation ul li a {
+    color: white;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border: 2px solid transparent;
+    transition: all .6s;
+}
+
+.navigation ul li a:hover {
+    border-bottom:  2px solid blue;
+}
+
+.navigation .search  {
+    width: 22px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.navigation .perfil {
+    width: 40;
+    cursor: pointer;
+}
+
+/*main*/
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 1.5em;
+}
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+}
+
+main section .logoboys {
+    width: 35em;
+    margin: 3em 0;
+}
+
+main section .btn-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-box .btn {
+    padding: 20px 45px;
+    background: #333;
+    color: white;
+    margin-bottom: 2em;
+    border-bottom: 2px solid white;
+    transition: all .3s;
+}
+.btn-box .btn:hover {
+    background: black;
+}
+.btn-box .btn:focus {
+    background: black;
+}
+
+main section .text {
+    color: white;
+    line-height: 22px;
+}
+
+.btn-box2 {
+    display: flex;
+    align-items: center;
+    color: white;
+    background: blue;
+    padding: 15px 45px;
+    margin-top: 2em;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 2px solid white ;
+    font-size: 25px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btn-box2:hover {
+    background: blueviolet;
+
+}
+
+.btn-box2 .play {
+    width: 1.4em;
+    filter: invert(1);
+}
+footer .cards {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-left: 23em;
+    margin-top: 1.5em;
+}
+
+footer .cards .card {
+    height: 180px;
+    max-width: 300px;
+    box-shadow: 12px 0 32px 2px black;
+    margin-left: -120px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+footer .cards .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cards .card:hover {
+    transform: translateY(-16px) rotate(3deg);
+}
+
+.card .card:hover ~ .card{
+    transform:  translate(100px);
+}
